@@ -584,6 +584,10 @@ Process uptime: {1}</value>
 		<value>Bot has level {0}.</value>
 		<comment>{0} will be replaced by bot's level</comment>
 	</data>
+	<data name="BotInventory" xml:space="preserve">
+		<value>{0}/{1} ({2}/{3}): {4} assets</value>
+		<comment>{0} will be replaced by appID (number), {1} will be replaced by contextID (number), {2} will be replaced by app's name (string), {3} will be replaced by name of the context (string), {4} will be replaced by number of assets in the specified inventory (number).</comment>
+	</data>
 	<data name="ActivelyMatchingItems" xml:space="preserve">
 		<value>Matching Steam items, round #{0}...</value>
 		<comment>{0} will be replaced by round number</comment>
@@ -791,5 +795,9 @@ Process uptime: {1}</value>
 	</data>
 	<data name="CustomPluginUpdatesEnabled" xml:space="preserve">
 		<value>Custom plugins have been registered for automatic updates. ASF team would like to remind you that, for your own safety, you should enable automatic updates only from trusted parties. If you didn't intend to do this, you can disable plugin updates in ASF global config.</value>
+	</data>
+	<data name="Input" xml:space="preserve">
+		<value>Input: {0}</value>
+		<comment>{0} will be replaced by text input from the user.</comment>
 	</data>
 </root>

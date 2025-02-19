@@ -21,22 +21,25 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-using System;
-using System.Reflection;
-using JetBrains.Annotations;
-using Microsoft.OpenApi.Models;
-using Swashbuckle.AspNetCore.SwaggerGen;
+using System.Collections.Generic;
+using System.Collections.Immutable;
+using System.ComponentModel;
+using System.Text.Json.Serialization;
+using SteamKit2.Internal;
 
-namespace ArchiSteamFarm.IPC.Swashbuckle;
+namespace ArchiSteamFarm.IPC.Responses;
 
-[UsedImplicitly]
-internal sealed class ReadOnlyFixesSchemaFilter : ISchemaFilter {
-	public void Apply(OpenApiSchema schema, SchemaFilterContext context) {
-		ArgumentNullException.ThrowIfNull(schema);
-		ArgumentNullException.ThrowIfNull(context);
+public sealed class BotInventoryResponse {
+	[Description("Inventory assets")]
+	[JsonInclude]
+	public ImmutableHashSet<CEcon_Asset>? Assets { get; private init; }
 
-		if (schema.ReadOnly && context.MemberInfo is PropertyInfo { CanWrite: true }) {
-			schema.ReadOnly = false;
-		}
+	[Description("Descriptions of the inventory assets")]
+	[JsonInclude]
+	public ImmutableHashSet<CEconItem_Description>? Descriptions { get; private init; }
+
+	internal BotInventoryResponse(IEnumerable<CEcon_Asset>? assets = null, IEnumerable<CEconItem_Description>? descriptions = null) {
+		Assets = assets?.ToImmutableHashSet();
+		Descriptions = descriptions?.ToImmutableHashSet();
 	}
 }

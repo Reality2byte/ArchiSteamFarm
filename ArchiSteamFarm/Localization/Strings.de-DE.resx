@@ -585,6 +585,7 @@ Prozesslaufzeit: {1}</value>
 		<value>Der Bot hat das Level {0}.</value>
 		<comment>{0} will be replaced by bot's level</comment>
 	</data>
+	
 	<data name="ActivelyMatchingItems" xml:space="preserve">
 		<value>Vergleiche Steam-Gegenstände, Durchgang #{0}...</value>
 		<comment>{0} will be replaced by round number</comment>
@@ -792,5 +793,9 @@ Prozesslaufzeit: {1}</value>
 	</data>
 	<data name="CustomPluginUpdatesEnabled" xml:space="preserve">
 		<value>Benutzerdefinierte Erweiterungen wurden für automatische Updates registriert. Das ASF-Team möchte Sie daran erinnern, dass Sie zu Ihrer eigenen Sicherheit automatische Updates nur von vertrauenswürdigen Parteien aktivieren sollten. Wenn Sie dies nicht beabsichtigen, können Sie Plugin-Updates in der globalen ASF-Konfuguration deaktivieren.</value>
+	</data>
+	<data name="Input" xml:space="preserve">
+		<value>Eingabe: {0}</value>
+		<comment>{0} will be replaced by text input from the user.</comment>
 	</data>
 </root>

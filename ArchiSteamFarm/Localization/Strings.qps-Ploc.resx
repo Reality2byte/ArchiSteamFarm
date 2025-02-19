@@ -584,6 +584,7 @@ PROCES UPTIME: {1}</value>
 		<value>BOT HAS LEVEL {0}.</value>
 		<comment>{0} will be replaced by bot's level</comment>
 	</data>
+	
 	<data name="ActivelyMatchingItems" xml:space="preserve">
 		<value>MATCHIN STEAM ITEMS, ROUND #{0}...</value>
 		<comment>{0} will be replaced by round number</comment>
@@ -792,4 +793,5 @@ PROCES UPTIME: {1}</value>
 	<data name="CustomPluginUpdatesEnabled" xml:space="preserve">
 		<value>CUSTOM PLUGINS HAS BEEN REGISTERD 4 AUTOMATIC UPDATEZ. ASF TEAM WUD LIEK 2 REMIND U DAT, 4 UR OWN SAFETY, U SHUD ENABLE AUTOMATIC UPDATEZ ONLY FRUM TRUSTD PARTIEZ. IF U DIDNT INTEND 2 DO DIS, U CAN DISABLE PLUGIN UPDATEZ IN ASF GLOBAL CONFIG.</value>
 	</data>
+	
 </root>

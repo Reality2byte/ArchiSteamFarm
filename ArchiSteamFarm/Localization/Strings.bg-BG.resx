@@ -578,6 +578,7 @@
 		<value>Ботът има ниво {0}.</value>
 		<comment>{0} will be replaced by bot's level</comment>
 	</data>
+	
 	<data name="ActivelyMatchingItems" xml:space="preserve">
 		<value>Сравняват се Steam предмети, #{0} път...</value>
 		<comment>{0} will be replaced by round number</comment>
@@ -716,6 +717,7 @@
 		<value>Опитахте да използвате платена функция {0}, но нямате зададен валиден LicenseID в глобалната конфигурация на ASF. Моля, прегледайте конфигурацията си, тъй като функционалността няма да работи без допълнителни подробности.</value>
 		<comment>{0} will be replaced by feature name (e.g. MatchActively)</comment>
 	</data>
+	
 	
 	
 	

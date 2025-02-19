@@ -28,8 +28,6 @@ using System.Diagnostics;
 using System.Globalization;
 using System.IO;
 using System.Linq;
-using System.Net.Http;
-using System.Net.Quic;
 using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Text;
@@ -59,7 +57,6 @@ internal static class Program {
 	internal static bool Service { get; private set; }
 	internal static bool ShutdownSequenceInitialized { get; private set; }
 	internal static bool SteamParentalGeneration { get; private set; } = true;
-	internal static bool UseOpenApi { get; private set; }
 
 	private static readonly Dictionary<PosixSignal, PosixSignalRegistration> RegisteredPosixSignals = new();
 	private static readonly TaskCompletionSource<byte> ShutdownResetEvent = new();
@@ -535,14 +532,7 @@ internal static class Program {
 		ArgumentNullException.ThrowIfNull(e);
 		ArgumentNullException.ThrowIfNull(e.Exception);
 
-		// TODO: Remove conditionally ignoring exceptions once reports are resolved
-		// https://github.com/dotnet/runtime/issues/80111
-		// https://github.com/dotnet/runtime/issues/102772
-		bool ignored = e.Exception.InnerExceptions.Any(static exception => exception is HttpIOException or QuicException);
-
-		if (!ignored) {
-			await ASF.ArchiLogger.LogFatalException(e.Exception).ConfigureAwait(false);
-		}
+		await ASF.ArchiLogger.LogFatalException(e.Exception).ConfigureAwait(false);
 
 		// Normally we should abort the application, but due to the fact that unobserved exceptions do not have to do that, it's a better idea to log it and try to continue
 		e.SetObserved();
@@ -610,10 +600,6 @@ internal static class Program {
 					break;
 				case "--SYSTEM-REQUIRED" when noArgumentValueNext():
 					SystemRequired = true;
-
-					break;
-				case "--USE-OPENAPI" when noArgumentValueNext():
-					UseOpenApi = true;
 
 					break;
 				default:

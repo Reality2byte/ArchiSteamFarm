@@ -584,6 +584,7 @@ Proces: {1}</value>
 		<value>Botul are nivelul {0}.</value>
 		<comment>{0} will be replaced by bot's level</comment>
 	</data>
+	
 	<data name="ActivelyMatchingItems" xml:space="preserve">
 		<value>Se potrivesc obiectele Steam, runda #{0}...</value>
 		<comment>{0} will be replaced by round number</comment>
@@ -792,4 +793,5 @@ Proces: {1}</value>
 	<data name="CustomPluginUpdatesEnabled" xml:space="preserve">
 		<value>Au fost înregistrate plugin-uri personalizate pentru actualizări automate. Echipa ASF ar dori să vă reamintească că, pentru siguranța proprie, ar trebui să activați actualizările automate doar de la sursele de încredere. Dacă nu intenționați să faceți acest lucru, puteți dezactiva actualizările plugin-urilor în configurarea globală ASF.</value>
 	</data>
+	
 </root>

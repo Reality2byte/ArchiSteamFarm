@@ -498,6 +498,7 @@ StackTrace:
 	</data>
 	
 	
+	
 	<data name="ErrorAborted" xml:space="preserve">
 		<value>ยกเลิกแล้ว!</value>
 	</data>
@@ -569,6 +570,7 @@ StackTrace:
 		<value>โปรดกรอกคีย์รหัสลับของคุณ: </value>
 		<comment>Please note that this translation should end with space</comment>
 	</data>
+	
 	
 	
 	

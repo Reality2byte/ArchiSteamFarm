@@ -584,6 +584,7 @@ StackTrace:
 		<value>봇은 레벨 {0} 입니다.</value>
 		<comment>{0} will be replaced by bot's level</comment>
 	</data>
+	
 	<data name="ActivelyMatchingItems" xml:space="preserve">
 		<value>#{0} 번째 Steam 아이템 매칭 중입니다.</value>
 		<comment>{0} will be replaced by round number</comment>
@@ -737,6 +738,7 @@ StackTrace:
 		<value>{0} ({1}) 게임이 비공개로 설정되어 있기 때문에 농사를 지을 수 없습니다. ASF로 이 게임 농사를 지으려면 공개로 변경해주세요.</value>
 		<comment>{0} will be replaced by game's ID (number), {1} will be replaced by game's name</comment>
 	</data>
+	
 	
 	
 	

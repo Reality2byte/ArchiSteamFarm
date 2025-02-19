@@ -541,6 +541,7 @@ StackTrace:
 	</data>
 	
 	
+	
 	<data name="ErrorAborted" xml:space="preserve">
 		<value>کنسل شد!</value>
 	</data>
@@ -608,6 +609,7 @@ StackTrace:
 		<value>در حال رد کردن: {0}...</value>
 		<comment>{0} will be replaced by text value (string) of entry being skipped.</comment>
 	</data>
+	
 	
 	
 	

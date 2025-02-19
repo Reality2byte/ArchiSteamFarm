@@ -584,6 +584,7 @@ Tempo de execução: {1}</value>
 		<value>O bot está a nível {0}.</value>
 		<comment>{0} will be replaced by bot's level</comment>
 	</data>
+	
 	<data name="ActivelyMatchingItems" xml:space="preserve">
 		<value>Correspondendo itens da Steam, ronda #{0}...</value>
 		<comment>{0} will be replaced by round number</comment>
@@ -725,6 +726,7 @@ Tempo de execução: {1}</value>
 		<value>Tentou usar uma funcionalidade paga {0}, mas não tem uma LicenseID válida definida na configuração global do ASF. Por favor, reveja a sua configuração, pois as funcionalidades não funcionarão sem detalhes adicionais.</value>
 		<comment>{0} will be replaced by feature name (e.g. MatchActively)</comment>
 	</data>
+	
 	
 	
 	
